@@ -1,0 +1,34 @@
+Vega Stack 
+sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
+
+
+pipeline {
+    agent any
+
+    stages {
+        stage('RUn A Command') {
+            steps {
+                echo 'Hello Run A Command'
+
+            }
+        }
+         stage('Run on Build') {
+
+            steps {
+                echo 'RUn on BUild'
+            }
+        }
+         stage('Run on Test') {
+            steps {
+                echo 'deploy on test'
+
+            }
+        }
+        
+steps('Deploy on Prod'){
+steps{
+echo 'deploy on prod'
+}
+    }
+}
+}
