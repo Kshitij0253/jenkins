@@ -20,11 +20,11 @@ pipeline {
 
             }
         }
-        
-steps('Deploy on Prod'){
-steps{
-echo 'deploy on prod'
-}
-    }
+     stage('Deploy on Prod') {
+            steps {
+                echo 'deploy on Prod'
+
+            }
+        }
 }
 }
