@@ -1,7 +1,3 @@
-Vega Stack 
-sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
-
-
 pipeline {
     agent any
 
